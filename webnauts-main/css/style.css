@@ -30,6 +30,7 @@ body {
 button {
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 ul {
@@ -135,7 +136,7 @@ ul {
     line-height: 47px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-left: 217px;
     margin-bottom: 103px;
 }
@@ -342,11 +343,13 @@ ul {
 }
 
 .container {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 .header .wrapper-top .container {
