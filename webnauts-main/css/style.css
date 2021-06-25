@@ -48,9 +48,17 @@ ul {
 }
 
 .header .contacts li {
+    position: relative;
     list-style-type: none;
     display: inline-block;
     margin-right: 56px;
+    padding-left: 22px;
+}
+
+.header .contacts img {
+    position: absolute;
+    top: 4px;
+    left: 0px;
 }
 
 .header .contacts li:lastt-child {
@@ -104,18 +112,77 @@ ul {
 }
 
 .header .navigation .active {
+    position: relative;
     color: #ff7129;
+}
+
+.header .navigation .active::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #ff7129;
+    top: 9px;
+    left: -15px;
+}
+
+.header .navigation .active::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #ff7129;
+    top: 9px;
+    right: -15px;
 }
 
 .start-screen {
     text-align: center;
     background-image: url(../img/main_bg.jpg);
-    padding-top: 270px;
-    padding-bottom: 138px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
     /*растянуть картинку на весь блок*/
+}
+
+.start-screen .container {
+    position: relative;
+    padding-top: 270px;
+    padding-bottom: 138px;
+}
+
+.start-screen .decor-word {
+    position: absolute;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    font-family: Gilroy;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    text-transform: uppercase;
+    top: 163px;
+    left: 50px;
+}
+
+.start-screen .decor-word-2 {
+    position: absolute;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    font-family: Gilroy;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    text-transform: uppercase;
+    right: 50px;
+    bottom: 282px;
 }
 
 .screen-onas {
@@ -217,11 +284,28 @@ ul {
     padding-bottom: 115px;
 }
 
+.main-info .decor-word {
+    position: absolute;
+    -webkit-text-stroke: 1px rgba(32, 36, 45, 0.1);
+    font-family: Gilroy;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    text-transform: uppercase;
+    top: -5px;
+    left: -28px;
+}
+
 .main-info .container {
     display: flex;
 }
 
 .main-info .content {
+    position: relative;
     width: 535px;
     padding-top: 69px;
 }
@@ -242,9 +326,22 @@ ul {
     margin-right: 65px;
 }
 
-.main-info title {
+.main-info .title {
+    position: relative;
     margin-top: 0;
     padding-bottom: 64px;
+    padding-left: 16px;
+}
+
+.main-info .title::before {
+    position: absolute;
+    content: "";
+    height: 52px;
+    width: 1px;
+    background-color: #ff7129;
+    display: block;
+    top: 0px;
+    left: 0px;
 }
 
 .content .title {
