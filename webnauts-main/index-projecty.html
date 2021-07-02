@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Webnauts project</title>
 </head>
@@ -14,22 +15,22 @@
         <div class="wrapper-top">
             <div class="container">
                 <span class="address">Dąbrówka Wielkopolska, ul. Główna 53, 66-210
-                        Zbąszynek</adress
-                    ></span>
+                    Zbąszynek</adress
+                ></span>
                 <ul class="contacts">
                     <li>
                         <img src="img/frame_1.svg" width="14" height="14" alt="icon" />
                         <a href="dorotapawezka@gmail.com">dorotapawezka@gmail.com</a
-                            >
-                        </li>
-                        <li>
-                            <img
-                                src="img/vector_1.svg"
-                                width="14"
-                                height="14"
-                                alt="icon"
-                            />
-                            <a href="tel:+48695716531"> +48695716531</a>
+                        >
+                    </li>
+                    <li>
+                        <img
+                            src="img/vector_1.svg"
+                            width="14"
+                            height="14"
+                            alt="icon"
+                        />
+                        <a href="tel:+48695716531"> +48695716531</a>
                     </li>
                 </ul>
             </div>
@@ -43,11 +44,11 @@
                     <ul>
                         <li>
                             <a class="active" href="#">
-                                    &mdash; Storona glowna &mdash;</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#"> O nas</a>
+                                Storona glowna </a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"> O nas</a>
                         </li>
                         <li>
                             <a href="#"> Projekty</a>
@@ -63,20 +64,55 @@
             </div>
         </div>
     </header>
+
     <main>
         <section class="main-info">
-            <img src="#" width="200" height="200" alt="some img" />
-            <div class="content">
-                <h1 class="title">Projekty</h1>
-                <button class="btn-scroll-left">
+            <div class="container">
+
+                <div class="content-proj">
+                    <h1 class="title">Projekty</h1>
+                    <!-- <button class="btn-scroll-left">
                         <img src="#" width="50" height="50" alt="scroll btn" />
                     </button>
-                <img src="#" width="200" height="200" alt="some img" />
-                <button class="btn-scroll-right">
+                    <img src="img/dom 1.jpg" width="1019" height="532" alt="some img" />
+                    <button class="btn-scroll-right">
                         <img src="#" width="50" height="50" alt="scroll btn" />
                     </button>
-            </div>
+                </div>
+            </div> -->
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                            <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                            <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                            <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                            <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                            <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                            <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                            <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                            <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
         </section>
+        <!-- <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+                <div class="swiper-slide"><img src="img/dom 1.jpg" width="1019" height="532" alt="some img" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div> -->
     </main>
     <footer class="footer">
         <div class="container">
@@ -111,8 +147,48 @@
                 <a href="#" class="privace">Polityka prywatności</a>
                 <a href="#" class="secur-data">Ochrona danych osobowych</a>
             </div>
+
+
+            <div class="pop-up">
+                <div class="fot">
+                    <div class="fot-1">
+                        <p class="text">Przybliżony koszt:</p>
+                        <p class="text1">40 000 zł</p>
+                    </div>
+                    <div class="fot-2">
+                        <button class="pop-up-closed">                <a href="#">
+                        <img src="img/closed.png" height="13" width="13" alt="closed" />
+                    </a></button>
+                        <button class="btn" type="przeliczyć">Przeliczyćd</button>
+                    </div>
+                </div>
+                <div class="fot1">
+                    <p class="text2">Jakieś pytania?</p>
+                    <p class="text3">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
+                    <form method="GET" action="#">
+                        <label>
+                        <p> Twoje imię </p>
+                        <input type="text" name="user" placeholder="Wprowadź swoje imię">              
+                    </label>
+                        <label>
+                       <p> E-mail</p>
+                        <input type="email" name="email" placeholder="Wprowadź mail">            
+                    </label>
+                        <label class="tel">
+                      <p> Telefon  </p> 
+                    <input  type="tel" name="phone" placeholder="Wprowadź telefon">            
+                    </label>
+
+                        <button class="btn" type="submit">Wysłać prośbę</button>
+                    </form>
+                </div>
+            </div>
         </div>
+
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
